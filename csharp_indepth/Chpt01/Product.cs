@@ -24,7 +24,7 @@ namespace Chpt01
         public override string ToString()
         {
             //return base.ToString();
-            return string.Format("{0}:{1}",Name,Price);
+            return $"{Name}:{Price}";
         }
 
         public static List<Product> GetSampleProducts()
