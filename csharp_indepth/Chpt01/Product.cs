@@ -8,10 +8,10 @@ namespace Chpt01
 {
     public class Product
     {
-        private string name;
+        //private string name;
         public string Name { set; get; }
 
-        private decimal price;
+        //private decimal price;
 
         public decimal Price { set; get; }
 
@@ -19,6 +19,12 @@ namespace Chpt01
         {
             this.Name = name;
             this.Price = price;
+        }
+
+        public override string ToString()
+        {
+            //return base.ToString();
+            return string.Format("{0}:{1}",Name,Price);
         }
 
         public static List<Product> GetSampleProducts()
